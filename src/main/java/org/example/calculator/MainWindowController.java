@@ -18,15 +18,16 @@ public class MainWindowController {
     private String operator;
     private final StringBuilder sb = new StringBuilder();
     public void init(Stage stage) {
-//        titlePane.setOnMouseClicked(event -> {
-//            x = event.getScreenX() - stage.getX();
-//            y = event.getScreenY() - stage.getY();
-//        });
-//        titlePane.setOnMouseDragged(event -> {
-//            stage.setX(event.getScreenX() - x);
-//            stage.setY(event.getScreenY() - y);
-//        });
-        btnClose.setOnMouseClicked(event -> {
+        titlePane.setOnMouseClicked(event -> {
+            x = event.getSceneX();
+            y = event.getSceneY();
+        });
+        // Somehow, the drag isn't really working
+        titlePane.setOnMouseDragged(event -> {
+            stage.setX(event.getScreenX() - x);
+            stage.setY(event.getScreenY() - y);
+        });
+       btnClose.setOnMouseClicked(event -> {
             stage.close();
         });
         btnMini.setOnMouseClicked(event -> {
