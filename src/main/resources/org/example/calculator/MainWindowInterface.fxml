@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="610.0" prefWidth="460.0" styleClass="root" stylesheets="@../../../styles/MainWindowStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calculator.MainWindowController">
+   <children>
+      <Pane fx:id="frontPanel" layoutX="5.0" layoutY="23.0" prefHeight="583.0" prefWidth="449.0" styleClass="mainPane" stylesheets="@../../../styles/MainWindowStyle.css">
+         <children>
+            <Pane layoutX="5.0" layoutY="14.0" prefHeight="117.0" prefWidth="440.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label fx:id="lblDisplay" alignment="CENTER_RIGHT" contentDisplay="TOP" layoutX="5.0" layoutY="32.0" prefHeight="53.0" prefWidth="421.0" text="0.0" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="5.0" layoutY="141.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="118.0" layoutY="141.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" prefHeight="53.0" prefWidth="16.0" text="8" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="231.0" layoutY="141.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" prefHeight="53.0" prefWidth="16.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="345.0" layoutY="141.0" onMouseClicked="#onSymbolClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" prefHeight="53.0" prefWidth="26.0" text="+" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="5.0" layoutY="475.0" onMouseClicked="#onSymbolClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" prefHeight="53.0" prefWidth="26.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="118.0" layoutY="475.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" prefHeight="53.0" prefWidth="26.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="231.0" layoutY="475.0" onMouseClicked="#onSymbolClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" prefHeight="53.0" prefWidth="26.0" text="=" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="345.0" layoutY="475.0" onMouseClicked="#onSymbolClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="41.0" layoutY="22.0" prefHeight="53.0" prefWidth="16.0" text="/" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="4.0" layoutY="363.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" prefHeight="53.0" prefWidth="16.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="117.0" layoutY="363.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" prefHeight="53.0" prefWidth="16.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="231.0" layoutY="363.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" prefHeight="53.0" prefWidth="16.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="344.0" layoutY="363.0" onMouseClicked="#onSymbolClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="42.0" layoutY="33.0" prefHeight="53.0" prefWidth="16.0" text="*" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="5.0" layoutY="252.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" prefHeight="53.0" prefWidth="16.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="118.0" layoutY="252.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" prefHeight="53.0" prefWidth="16.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="231.0" layoutY="252.0" onMouseClicked="#onNumberClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" prefHeight="53.0" prefWidth="16.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="345.0" layoutY="252.0" onMouseClicked="#onSymbolClick" prefHeight="100.0" prefWidth="100.0" styleClass="highlight" stylesheets="@../../../styles/MainWindowStyle.css">
+               <children>
+                  <Label layoutX="41.0" layoutY="28.0" prefHeight="53.0" prefWidth="16.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane fx:id="titlePane" prefHeight="24.0" prefWidth="460.0">
+         <children>
+            <ImageView fx:id="btnClose" fitHeight="16.0" fitWidth="16.0" layoutX="430.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="btnMini" fitHeight="16.0" fitWidth="16.0" layoutX="400.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/hide.png" />
+               </image></ImageView>
+            <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="25.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="50.0" layoutY="3.0" text="Calculator" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
